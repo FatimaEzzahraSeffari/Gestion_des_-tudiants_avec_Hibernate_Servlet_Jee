@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" version="4.0">
+  <display-name>TP2</display-name>
+  <servlet>
+    <display-name>Etudiant</display-name>
+    <servlet-name>Etudiant</servlet-name>
+    <servlet-class>controller.EtudiantControllerServlet</servlet-class>
+  </servlet>
+   <servlet-mapping>
+    <servlet-name>Etudiant</servlet-name>
+    <url-pattern>/register</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <display-name>Module</display-name>
+    <servlet-name>Module</servlet-name>
+    <servlet-class>controller.ModuleControllerServlet</servlet-class>
+  </servlet>
+   <servlet>
+    <display-name>Note</display-name>
+    <servlet-name>Note</servlet-name>
+    <servlet-class>controller.NoteControllerServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <display-name>Success</display-name>
+    <servlet-name>Success</servlet-name>
+    <servlet-class>controller.Success</servlet-class>
+  </servlet>
+ 
+  <servlet-mapping>
+    <servlet-name>Module</servlet-name>
+    <url-pattern>/moduleadd</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Note</servlet-name>
+    <url-pattern>/addNote</url-pattern>
+  </servlet-mapping>
+    
+  <servlet-mapping>
+    <servlet-name>Success</servlet-name>
+    <url-pattern>/Success</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  
+   
+  <servlet>
+    <description></description>
+    <display-name>EtudiantListServlet</display-name>
+    <servlet-name>EtudiantListServlet</servlet-name>
+    <servlet-class>controller.EtudiantListServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EtudiantListServlet</servlet-name>
+    <url-pattern>/EtudiantListServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>ModuleListServlet</display-name>
+    <servlet-name>ModuleListServlet</servlet-name>
+    <servlet-class>controller.ModuleListServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ModuleListServlet</servlet-name>
+    <url-pattern>/ModuleListServlet</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <description></description>
+    <display-name>NoteListServlet</display-name>
+    <servlet-name>NoteListServlet</servlet-name>
+    <servlet-class>controller.NoteListServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>NoteListServlet</servlet-name>
+    <url-pattern>/NoteListServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
